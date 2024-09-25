@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "justproject"
+version = "0.1.0"
+description = ""
+authors = ["Nastya Foxe <Kukusiki2204@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+sqlalchemy = "^2.0.35"
+aiosqlite = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -2,7 +2,7 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends
 
-from repository import MovieRepository
+from src.repository import MovieRepository
 from schemas import SMovieAdd, SMovie, SMovieId
 
 router = APIRouter(
@@ -23,3 +23,4 @@ async def add_movie(
 async def get_movie() -> list[SMovie]:
     movies = await MovieRepository.find_all()
     return movies
+

@@ -1,7 +1,7 @@
 from sqlalchemy import select
 
-from database import new_session, MoviesOrm
-from schemas import SMovieAdd, SMovie
+from src.database import new_session, MoviesOrm
+from src.operations.schemas import SMovieAdd, SMovie
 
 
 class MovieRepository:
